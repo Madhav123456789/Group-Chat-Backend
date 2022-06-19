@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // creating connection between socket and server
 const io = socket(server);
 
-const PORT = 8000||process.env.PORT;
+const PORT = process.env.PORT||8000;
 // middlewares
 app.use(cors({
     origin:"http://localhost:3000"
