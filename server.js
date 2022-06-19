@@ -12,12 +12,8 @@ const io = socket(server);
 
 const PORT = process.env.PORT||8000;
 // middlewares
-// app.use(cors({
-//     origin:" https://my-group-chat.herokuapp.com"
-// }));
-
 app.use(cors({
-    origin:" http://localhost:3000"
+    origin:" https://my-group-chat.herokuapp.com"
 }));
 
 // default api
